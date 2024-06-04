@@ -1,0 +1,138 @@
+/* DEBUG styles */
+* {
+  /* this rule will target ALL elements in main */
+  /* outline: 1px rgba(255, 0, 0, 0.4) dashed; */
+}
+
+
+
+body {
+  /* color: red; */
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  /* vh is a percentage of the "view height" 100% of the windows height */
+}
+
+/* Trying to layout elements should not be done with margin OR padding, those are for adjustments */
+span {
+  /* margin: 20px; */
+}
+
+button {
+  /* margin-left: 400px; */
+  border: 0;
+  background: unset;
+  cursor: pointer;
+}
+
+.button-purple {
+  background-color: #713EDD;
+  color: white;
+  border-radius: 15px;
+  padding: .75em 1.5em;
+}
+
+header {
+  /* font-size: 20px; */
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  /* em, is a multiple of the font-size of the element, standard font size is 16px, so .75 = (16px * .75) 12px */
+  padding-bottom: .75em;
+  padding-top: 2em;
+}
+
+a {
+  margin-right: 1em;
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: #713EDD;
+  text-decoration: underline;
+}
+
+
+main {
+  display: flex;
+  /* margin-top: 5em !important; */
+  /* important should not be used, to overwrite rules */
+  /* margin-top: 5em; */
+  /* margin-bottom: 5em; */
+  /* overflow-y: scroll; */
+}
+
+main.gutters {
+  /* Example of overwriting a rule to be more specific */
+  /* changed this to more display flex, and FLEX GROW */
+  /* margin-top: 5em;
+  margin-bottom: 5em; */
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.logo {
+  /* pixels are absolute measurements and CAN cause issues when certain things like screen size or text size change */
+  margin-right: 30px;
+  font-weight: bold;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+main p {
+  line-height: 1.876em;
+  margin-bottom: 2em;
+}
+
+main button:last-child {
+  font-weight: bold;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.img-fit {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #16063B;
+  color: white;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+
+.footer-box {
+  width: 22%;
+}
+
+.gutters {
+  margin: 0px 75px;
+}
